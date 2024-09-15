@@ -1,0 +1,178 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    background: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 1em;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+header .profile-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 5px solid #fff;
+    animation: bounce 2s infinite;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0.5em 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 2em;
+    max-width: 100%;
+    margin: auto;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+section h2 {
+    color: #3498db;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background: #fff;
+    margin: 0.5em 0;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding in width */
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.social-links a {
+    background: #3498db;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #2980b9;
+}
+
+footer {
+    background: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and larger phones */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 1.5em;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    section h2 {
+        font-size: 1.3em;
+    }
+
+    .social-links a {
+        padding: 0.4em 0.8em;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+    
+    header p {
+        font-size: 0.9em;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    ul li {
+        padding: 0.8em;
+    }
+
+    .social-links a {
+        padding: 0.3em 0.6em;
+    }
+}
