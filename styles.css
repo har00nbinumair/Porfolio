@@ -23,7 +23,7 @@ header .profile-img {
     border-radius: 50%;
     width: 120px;
     height: 180px;
-    border: 5px solid #fff;
+    border: 5px solid #000;
     animation: bounce 2s infinite;
     margin: 0 auto;
 }
